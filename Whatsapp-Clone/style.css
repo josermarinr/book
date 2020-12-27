@@ -1,0 +1,104 @@
+
+.app{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   background-color: #dadbd3 ;
+}
+
+.app_body{
+   display: flex;
+   background-color: #ededed;
+   margin-top: -25px;
+   height: 95vh;
+   width: 96vw;
+   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.sideBar{
+   display: flex;
+   flex-direction: column;
+   flex: 0.35;
+}
+.sideBarHeader{
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   border-right: 1px solid lightgray;
+}
+
+.sideBarHeader_iconAvatar{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   min-width: 10vw;
+}
+
+.sideBarHeader_iconAvatar > svg {
+   fill: gray;
+   margin-right: 2vw;
+   height: 41px;
+   width: 41px;
+   font-size: 24px !important;
+}
+.sideBarHeader_iconAvatar > svg > path {
+   height: 50px;
+}
+
+
+.sideBarInput{
+   display: flex;
+   align-items: center;
+   background-color: #f6f6f6;
+   height: 39px;
+   padding: 10px;
+}
+
+.sideBarInput_input{
+   display: flex;
+   align-items: center;
+   background-color: white;
+   width: 100%;
+   height: 35px;
+   border-radius: 20px;
+}
+
+.sideBarInput_input > img {
+   color: gray;
+   padding: 10px;
+}
+
+.sideBarInput_input > input{
+   border: none;
+   margin-left: 10px;
+   outline-width: 0;
+}
+.sideBarBody {
+   flex: 1;
+   background: white;
+   overflow: scroll;
+}
+
+.sideBarBody_chat{
+   display: flex;
+   padding: 20px;
+   cursor: pointer;
+   border-bottom: 1px solid #f6f6f6;
+}
+
+.sideBarBody_chat:hover{
+   background-color: #ebebeb;
+}
+
+.sideBarBody_chat {
+   margin-left: 15px;
+}
+
+.sideBarBody_chatText > h3{
+   font-size: 16px;
+   margin-bottom: 8px;
+}
+.sideBarBody_chatText > p{
+   font-size: 11px;
+}
