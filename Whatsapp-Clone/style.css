@@ -1,13 +1,22 @@
+* {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
 
-.app{
+::-webkit-scrollbar {
+   width: 6px !important;
+   height: 6px !important;
+}
+
+.app {
    display: flex;
    justify-content: center;
    align-items: center;
    height: 100vh;
-   background-color: #dadbd3 ;
+   background-color: #dadbd3;
 }
 
-.app_body{
+.app_body {
    display: flex;
    background-color: #ededed;
    margin-top: -25px;
@@ -16,46 +25,68 @@
    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
 }
 
-.sideBar{
+.sideBar {
    display: flex;
    flex-direction: column;
    flex: 0.35;
 }
-.sideBarHeader{
+
+.sideBarHeader {
    display: flex;
    justify-content: space-between;
    padding: 20px;
    border-right: 1px solid lightgray;
 }
 
-.sideBarHeader_iconAvatar{
+.sideBarHeader_iconAvatar {
    display: flex;
    align-items: center;
    justify-content: space-between;
    min-width: 10vw;
 }
 
-.sideBarHeader_iconAvatar > svg {
-   fill: gray;
+.sideBarHeader_iconAvatar>svg {
+   fill: #bdbdbd;
    margin-right: 2vw;
    height: 41px;
    width: 41px;
    font-size: 24px !important;
 }
-.sideBarHeader_iconAvatar > svg > path {
-   height: 50px;
+
+.sideBarHeader_iconsSideBar {
+   display: flex;
+   align-items: center;
 }
 
+.sideBarHeader_iconsSideBar_Icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+}
 
-.sideBarInput{
+.sideBarHeader_iconsSideBar_Icon:hover {
+   background-color: rgba(0, 0, 0, 0.04);
+}
+
+.sideBarHeader_iconsSideBar_Icon>svg {
+   width: 24px;
+   height: 24px;
+   fill: gray;
+}
+
+.sideBarInput {
    display: flex;
    align-items: center;
    background-color: #f6f6f6;
    height: 39px;
    padding: 10px;
+
 }
 
-.sideBarInput_input{
+.sideBarInput_input {
    display: flex;
    align-items: center;
    background-color: white;
@@ -64,41 +95,170 @@
    border-radius: 20px;
 }
 
-.sideBarInput_input > img {
-   color: gray;
+.sideBarInput_icon {
+   width: 40px;
+}
+
+.sideBarInput_icon>svg {
+   fill: gray;
+   transform: scale(.9);
+   height: 20px;
+   width: 20px;
    padding: 10px;
 }
 
-.sideBarInput_input > input{
+.sideBarInput_input>input {
    border: none;
    margin-left: 10px;
    outline-width: 0;
 }
+
 .sideBarBody {
-   flex: 1;
-   background: white;
+   flex: 1 1;
+   background: #fff;
    overflow: scroll;
 }
 
-.sideBarBody_chat{
+.sideBarBody_chat {
    display: flex;
    padding: 20px;
    cursor: pointer;
    border-bottom: 1px solid #f6f6f6;
 }
 
-.sideBarBody_chat:hover{
+.sideBarBody_chat:hover {
    background-color: #ebebeb;
 }
 
-.sideBarBody_chat {
+.sideBarBody_chatIcon svg {
+   fill: #bdbdbd;
+   height: 40px;
+   width: 40px;
+}
+
+.sideBarBody_chatText {
    margin-left: 15px;
 }
 
-.sideBarBody_chatText > h3{
+.sideBarBody_chatText>h3 {
    font-size: 16px;
-   margin-bottom: 8px;
+   margin: 0 0 8px 0;
 }
-.sideBarBody_chatText > p{
+
+.sideBarBody_chatText>p {
    font-size: 11px;
+   margin: 0;
+}
+
+.chat {
+   display: flex;
+   flex-direction: column;
+   flex: 0.65 1;
+}
+
+.chatHeader {
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid #d3d3d3;
+}
+
+.chatHeader_left {
+   display: flex;
+}
+
+.chatHeader_leftIconAvatar svg {
+   fill: #bdbdbd;
+   height: 40px;
+   width: 40px;
+}
+
+.chatHeader_leftText {
+   flex: 1 1;
+   padding-left: 20px;
+}
+
+.chatHeader_leftText_title {
+   margin: 0 0 3px 0;
+   font-weight: 500;
+}
+
+.chatHeader_leftText_subtitle {
+   color: gray;
+   font-weight: 300;
+}
+
+
+.chatHeader_right {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   flex: auto;
+}
+
+.chatHeader_right_Icon {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+}
+
+.chatHeader_right_Icon:hover {
+   background-color: rgba(0, 0, 0, 0.04);
+}
+
+.chatHeader_right_Icon svg {
+   width: 24px;
+   height: 24px;
+   fill: gray;
+}
+
+.chatBody {
+   flex: 1 1;
+   background-image: url(bg.png);
+   background-repeat: repeat;
+   background-position: 50%;
+   padding: 30px;
+   overflow: scroll;
+}
+
+.chatFooter {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 62px;
+   width: 100%;
+   border-top: 1px solid #d3d3d3;
+}
+
+.chatFooter_icon {
+   display: flex;
+   padding: 10px;
+   margin: 0 5px;
+   border-radius: 50%;
+}
+
+.chatFooter_icon:hover {
+   background-color: rgba(0, 0, 0, 0.04);
+}
+
+.chatFooter_icon svg {
+   fill: gray;
+   height: 20px;
+   width: 20px;
+}
+
+.chatFooter_Input {
+   flex: 1 1;
+   display: flex;
+}
+
+.chatFooter_Input input {
+   flex: 1 1;
+   border-radius: 30px;
+   padding: 10px;
+   border: none;
+   outline-width: 0;
 }
