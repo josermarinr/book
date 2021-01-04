@@ -41,16 +41,12 @@
 .sideBarHeader_iconAvatar {
    display: flex;
    align-items: center;
-   justify-content: space-between;
-   min-width: 10vw;
 }
 
 .sideBarHeader_iconAvatar>svg {
    fill: #bdbdbd;
-   margin-right: 2vw;
    height: 41px;
    width: 41px;
-   font-size: 24px !important;
 }
 
 .sideBarHeader_iconsSideBar {
@@ -114,7 +110,7 @@
 }
 
 .sideBarBody {
-   flex: 1 1;
+   flex: 1;
    background: #fff;
    overflow: scroll;
 }
@@ -174,7 +170,6 @@
 }
 
 .chatHeader_leftText {
-   flex: 1 1;
    padding-left: 20px;
 }
 
@@ -251,12 +246,12 @@
 }
 
 .chatFooter_Input {
-   flex: 1 1;
+   flex: 1;
    display: flex;
 }
 
 .chatFooter_Input input {
-   flex: 1 1;
+   flex: 1;
    border-radius: 30px;
    padding: 10px;
    border: none;
