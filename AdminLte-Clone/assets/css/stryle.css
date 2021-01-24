@@ -1,0 +1,88 @@
+:root {
+   --bgPrimary: #10133E;
+   --organgeBg: #EE786C;
+   --bgSecondary: #F4F7FC;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   border: 5px solid var(--bgPrimary);
+   box-sizing: content-box;
+   width: 100%;
+   background-color: var(--bgPrimary);
+}
+
+.reversed {
+   transform: scale(-1);
+}
+
+/* sidebar */
+.sideBarMenu {
+   height: 100vh;
+}
+
+.sideBarMenu li {
+   margin: 24px;
+   font-size: 12px;
+   padding: 2px;
+   border-radius: 20px;
+}
+
+.sideBarMenu li a svg {
+   margin-right: 30px;
+   font-size: 24px;
+   text-align: left;
+   vertical-align: middle;
+}
+
+.sideBarMenu li:last-child {
+   margin-top: 116px;
+}
+
+.sideBarMenu li a {
+   position: relative;
+   color: white;
+}
+
+.sideBarMenu li a::before {
+   content: "";
+   height: 40px;
+   width: 0px;
+   border: 1px;
+   color: white;
+   position: absolute;
+   background-color: var(--organgeBg);
+   left: -43px;
+   top: 0;
+   z-index: -10;
+   border-radius: 0 10px 10px 0;
+   transition: 1s cubic-bezier(0.98, -0.01, 0, 1.06);
+
+}
+
+.sideBarMenu li a:hover {
+   color: white;
+}
+
+.sideBarMenu li:hover a::before {
+   width: 97px;
+   padding: 10px;
+   transition: 1s cubic-bezier(0.98, -0.01, 0, 1.06);
+}
+/* main */
+
+.bg-primarybg {
+   background-color: var(--bgPrimary);
+   color: white;
+}
+
+.cardBorderCurvedBlack {
+   border: 5px solid var(--bgPrimary);
+   border-radius: 30px;
+   background-color: var(--bgSecondary);
+   margin: 0 !important;
+}
