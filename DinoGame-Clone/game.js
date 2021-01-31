@@ -165,6 +165,7 @@ function points() {
 let FPS = 60;
 setInterval(function(){
   init();
+  console.log("hola cahcha et ")
 },2000/FPS); 
  
 function init(){
