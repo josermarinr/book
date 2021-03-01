@@ -86,3 +86,31 @@ body {
    background-color: var(--bgSecondary);
    margin: 0 !important;
 }
+.containerOfTable {
+   background-color: var(--bgPrimary);
+   padding: 10px;
+   border-radius: 10px;
+   box-shadow: 2px 2px white;
+}
+
+.ourTable {
+  margin: 0;
+   color: #ffc6c0;
+   font-weight: 400;
+   border-radius: 10px;
+   --bs-table-striped-color: var( --organgeBg);
+   border-color: transparent;
+   padding: 14px;
+}
+
+.ourTable thead{
+   border-style: hidden;
+   color: var(--bgSecondary);
+   font-weight: bolder;
+}
+
+.ourTable tbody tr:hover {
+   transform: 1s;
+   background-color: #f4f7fc72;
+   border-radius: 4px;
+}
