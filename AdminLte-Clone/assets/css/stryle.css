@@ -107,9 +107,15 @@ body {
    border-style: hidden;
    color: var(--bgSecondary);
    font-weight: bolder;
+   transition: 1s;
 }
 
 .ourTable tbody tr:hover{
-   transform: 1s;
+   transition: 1s ease-in-out;
    background-color: #f4f7fc72;
 }
+/* 
+#myChart {
+   height:40vh !important; 
+   width:70vw
+} */
