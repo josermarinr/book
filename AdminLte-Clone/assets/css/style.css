@@ -114,8 +114,7 @@ body {
    transition: 1s ease-in-out;
    background-color: #f4f7fc72;
 }
-/* 
-#myChart {
-   height:40vh !important; 
-   width:70vw
-} */
+.chartjs {
+   width: 600px !important;
+   height: 350px !important
+}
