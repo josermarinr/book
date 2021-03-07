@@ -114,7 +114,14 @@ body {
    transition: 1s ease-in-out;
    background-color: #f4f7fc72;
 }
-.chartjs {
+.chartjs-wrapper {
    width: 600px !important;
    height: 350px !important
 }
+
+.withScroll {
+   width: 400px;
+   overflow-y: scroll;
+   position: relative;
+   height: 300px;
+} 
