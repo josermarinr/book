@@ -124,4 +124,36 @@ body {
    overflow-y: scroll;
    position: relative;
    height: 300px;
-} 
+}
+
+.primaryText {
+   color: var(--organgeBg);
+}
+
+.secondaryText {
+    color: var(--bgPrimary);
+}
+
+.secondaryText:hover {
+       color: var(--bgPrimary);
+
+}
+
+.cardNumber {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    width: 70px;
+    margin-left: 10px;
+}
+
+.cardWithoutBorder {
+   width: 100%;
+   margin: 10px;
+   border: none !important;
+}
+
+.btn-primaryAction {
+   background: var(--organgeBg);
+}
