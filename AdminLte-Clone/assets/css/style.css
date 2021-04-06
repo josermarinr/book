@@ -1,159 +1,148 @@
 :root {
-   --bgPrimary: #10133E;
-   --organgeBg: #EE786C;
+   --bgPrimary: #10133e;
+   --orangeBg: #ee786c;
    --bgSecondary: #F4F7FC;
-}
-
-* {
+ }
+ 
+ * {
    margin: 0;
    padding: 0;
-}
-
-body {
+ }
+ 
+ body {
    border: 5px solid var(--bgPrimary);
    box-sizing: content-box;
-   width: 100%;
+   width: 99%;
    background-color: var(--bgPrimary);
-}
-
-.reversed {
+   overflow: hidden;
+ }
+ 
+  .reversed {
    transform: scale(-1);
-}
-
-/* sidebar */
-.sideBarMenu {
-   height: 100vh;
-}
-
-.sideBarMenu li {
+ } 
+ 
+ /* sidebar */
+  .sideBarMenu {
+   width: max-content;
+ }
+ 
+ .sideBarMenu li {
    margin: 24px;
    font-size: 12px;
    padding: 2px;
    border-radius: 20px;
-}
-
-.sideBarMenu li a svg {
+ }
+ 
+ .sideBarMenu li a svg {
    margin-right: 30px;
    font-size: 24px;
    text-align: left;
    vertical-align: middle;
-}
-
-.sideBarMenu li:last-child {
+ }
+ 
+ .sideBarMenu li:last-child {
    margin-top: 116px;
-}
-
-.sideBarMenu li a {
+ }
+ 
+ .sideBarMenu li a {
    position: relative;
    color: white;
-}
-
-.sideBarMenu li a::before {
+ }
+ 
+  .sideBarMenu li a::before {
    content: "";
    height: 40px;
    width: 0px;
    border: 1px;
-   color: white;
+ 
    position: absolute;
-   background-color: var(--organgeBg);
+   background-color: var(--orangeBg);
    left: -43px;
    top: 0;
    z-index: -10;
    border-radius: 0 10px 10px 0;
    transition: 1s cubic-bezier(0.98, -0.01, 0, 1.06);
-
-}
-
-.sideBarMenu li a:hover {
-   color: white;
-}
-
-.sideBarMenu li:hover a::before {
+ 
+ }
+ 
+ .sideBarMenu li:hover a::before {
    width: 97px;
    padding: 10px;
    transition: 1s cubic-bezier(0.98, -0.01, 0, 1.06);
-}
-/* main */
-
-.bg-primarybg {
-   background-color: var(--bgPrimary);
-   color: white;
-}
-
-.cardBorderCurvedBlack {
+ }  
+ 
+ /* main */
+ 
+ .cardBorderCurvedBlack {
    border: 5px solid var(--bgPrimary);
    border-radius: 30px;
    background-color: var(--bgSecondary);
-   margin: 0 !important;
-}
-.containerOfTable {
-   background-color: var(--bgPrimary);
+ }
+ 
+ .containerOfTable {
    padding: 10px;
-   border-radius: 10px;
-   box-shadow: 2px 2px white;
-}
-
-.ourTable {
+ 
+ }
+ 
+ .ourTable {
   margin: 0;
-   color: #ffc6c0;
+   color: var(--bgPrimary);
    font-weight: 400;
    border-radius: 10px;
-   --bs-table-striped-color: var( --organgeBg);
+   --bs-table-striped-color: var( --bgPrimary);
    border-color: transparent;
    padding: 14px;
-}
-
-.ourTable thead{
+ }
+ 
+ .ourTable thead{
    border-style: hidden;
-   color: var(--bgSecondary);
+   color: var(--bgPrimary);
    font-weight: bolder;
    transition: 1s;
-}
-
-.ourTable tbody tr:hover{
-   transition: 1s ease-in-out;
-   background-color: #f4f7fc72;
-}
-.chartjs-wrapper {
+ }
+ 
+ .ourTable tbody tr{
+   padding: 2px;
+   --bs-table-accent-bg: white !important;
+   border: 5px solid var(--bgSecondary);
+   border-radius: 10px;
+ 
+ }
+ 
+ .chartjs-wrapper {
    width: 600px !important;
    height: 350px !important
-}
-
-.withScroll {
+ }
+ 
+ .withScroll {
    width: 400px;
    overflow-y: scroll;
-   position: relative;
-   height: 300px;
-}
-
-.primaryText {
-   color: var(--organgeBg);
-}
-
-.secondaryText {
+   height: 550px;
+ }
+ 
+ .primaryText {
+   color: var(--orangeBg);
+ }
+ 
+ .secondaryText {
     color: var(--bgPrimary);
-}
-
-.secondaryText:hover {
-       color: var(--bgPrimary);
-
-}
-
-.cardNumber {
+ }
+ 
+ .cardNumber {
     align-items: center;
     justify-content: center;
     display: flex;
     height: 50px;
     width: 70px;
     margin-left: 10px;
-}
-
-.cardWithoutBorder {
+ }
+ 
+ .cardWithoutBorder {
    width: 100%;
-   margin: 10px;
+   margin: 10px 0;
    border: none !important;
-}
-
-.btn-primaryAction {
-   background: var(--organgeBg);
-}
+ }
+ 
+ .btn-primaryAction {
+   background: var(--orangeBg);
+ } 
