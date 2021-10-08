@@ -1,0 +1,36 @@
+.centerLayout {
+	&__subtitle {
+		text-align: center;
+		font-size: 26px;
+		margin: 0;
+		letter-spacing: 20px;
+	}
+
+	&__image {
+		display: flex;
+		margin-top: 16px;
+		justify-content: center;
+		align-items: center;
+		font-size: 120px;
+		height: 522px;
+		animation: fadeIn 1s ease-in-out;
+
+		span {
+			margin: 0 28px;
+		}
+
+		&__image {
+			opacity: 1;
+			animation: fadeIn 1.5s ease-in-out;
+		}
+	}
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+	from {
+		opacity: 0.5;
+	}
+}

@@ -1,0 +1,24 @@
+@import './../../variable.scss';
+
+.header {
+  font-weight: 700;
+  padding: 30px 40px 0 40px;
+  display: flex;
+  max-height: 20%;
+  justify-content: space-between;
+
+  &__menu {
+    display: inherit;
+    justify-content: flex-end;
+    width: 50%;
+    list-style: none;
+
+    &__item {
+      margin: 0 50px;
+      a {
+        text-decoration: none;
+        color: $dark-chocolate;
+      }
+    }
+  }
+}

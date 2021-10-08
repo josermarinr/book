@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "./variable.scss";
+
+body {
+	margin: 0;
+	font-family: "Bebas Neue", cursive;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 6px;
+	color: $chocolate;
+}

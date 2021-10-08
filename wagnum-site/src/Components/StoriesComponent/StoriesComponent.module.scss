@@ -1,0 +1,73 @@
+@import "./../../variable.scss";
+$Bg: #e7dedd;
+
+.storyComponent {
+	background: linear-gradient($Bg 80%, #fff);
+	height: 85vh;
+	overflow-x: hidden;
+
+	&__header {
+		height: 65%;
+		&__tile {
+			font-size: 180px;
+			text-align: center;
+		}
+	}
+
+	&__storiesCards {
+		display: flex;
+		padding: 10px;
+		height: 35%;
+		width: 99%;
+		overflow-x: auto;
+
+		.storyCard {
+			min-width: 600px;
+			width: 750px;
+			margin: 0 10px;
+			padding-left: 10px;
+			background-color: white;
+
+			span {
+				width: 80px;
+				padding: 3px;
+				margin-left: 5px;
+				box-shadow: 3px 3px $Bg;
+			}
+			h3 {
+				font-size: 25px;
+				width: 75%;
+			}
+
+			p {
+				font-size: 12px;
+				width: 90%;
+				max-height: 30px;
+			}
+
+			&__button {
+				display: flex;
+				justify-content: flex-end;
+				button {
+					width: 300px;
+					margin-top: 20px;
+					cursor: pointer;
+					font-family: inherit;
+					font-size: 14px;
+					text-align: right;
+					background-color: $caramel;
+					color: white;
+					border-radius: 50px 4px 4px 50px;
+					border: none;
+					height: 32px;
+					transition: 1s ease-in-out;
+
+					&:hover {
+						background: $vainilla;
+						color: $chocolate;
+					}
+				}
+			}
+		}
+	}
+}
