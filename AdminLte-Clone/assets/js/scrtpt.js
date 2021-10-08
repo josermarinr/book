@@ -41,10 +41,9 @@ let chart = new Chart(ctx, {
         }
     }
 });
+
 chart.config.options.scales.xAxes[0].gridLines.display = false
 chart.config.options.scales.yAxes[0].gridLines.display = false
-
-chart.config.options.showLines = false
 
 chart.canvas.parentNode.style.height = '300px';
 chart.canvas.parentNode.style.width = '600px';
@@ -56,8 +55,8 @@ function od delete row
 
 // Create a "close" button and append it to each list item
 let myTable = document.getElementById('TableTodo');
-console.log(myTable)
-let close = document.getElementsByClassName("example-popover");
+
+let close = document.getElementsByClassName("botonClose");
 let i;
 
 for (i = 0; i < close.length; i++) {
