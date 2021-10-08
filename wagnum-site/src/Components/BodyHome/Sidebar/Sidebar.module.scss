@@ -1,0 +1,15 @@
+.sidebar {
+	&__text {
+		text-align: center;
+		writing-mode: vertical-lr;
+		letter-spacing: 40px;
+		font-size: 50px;
+		line-height: 94px;
+		margin: 0 40px;
+		height: 600px;
+		text-transform: uppercase;
+		opacity: 0.4;
+		transform: scale(-1);
+		transition: 1s ease-in-out;
+	}
+}

@@ -1,0 +1,49 @@
+@import "./../../../variable.scss";
+
+.navigationLayout {
+	&__navItem {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		font-size: 50px;
+		color: $vainilla;
+		transition: 0.5s ease-in-out;
+		text-align: end;
+		padding-right: 40px;
+		height: 80px;
+
+		&_active {
+			@extend .active;
+		}
+	}
+}
+
+.active {
+	font-size: 50px;
+	color: $chocolate;
+	position: relative;
+	text-align: center;
+	padding-right: 40px;
+	transition: 0.5s ease-in-out;
+
+	&::before {
+		content: "";
+		background: url("./navigation.png") no-repeat;
+		position: absolute;
+		z-index: -1;
+		height: 325px;
+		width: 251px;
+		top: -170px;
+		right: -80px;
+		animation: ChocolateFounded 1s ease-in-out 1;
+	}
+}
+
+@keyframes ChocolateFounded {
+	to {
+		right: -80px;
+	}
+	from {
+		right: -500px;
+	}
+}

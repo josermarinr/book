@@ -1,0 +1,22 @@
+.logo {
+	position: relative;
+	width: fit-content;
+	margin: 6px;
+
+	&::before {
+		z-index: -1;
+		position: absolute;
+		top: 3px;
+		right: 5px;
+		content: "";
+		width: 55px;
+		height: 55px;
+		background: #1c0e08;
+		border-radius: 60%;
+	}
+
+	.appLogo {
+		width: 66px;
+		transform: scale(-1) translateY(5px);
+	}
+}
