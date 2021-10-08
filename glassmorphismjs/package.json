@@ -1,0 +1,27 @@
+{
+  "name": "glassmorphisminjs",
+  "version": "1.0.1",
+  "description": "package to create glssmorphism design",
+  "main": "src/index.js",
+  "source": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josermarinr/glassmorphismjs.git"
+  },
+  "keywords": [
+    "css",
+    "js",
+    "html",
+    "react",
+    "design"
+  ],
+  "author": "marinjose",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josermarinr/glassmorphismjs/issues"
+  },
+  "homepage": "https://github.com/josermarinr/glassmorphismjs#readme"
+}
